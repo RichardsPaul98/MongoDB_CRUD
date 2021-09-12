@@ -1,0 +1,11 @@
+version: "3"
+services: 
+    mongodb:
+        image: "mongo"
+    
+    reader:
+        build: .
+        depends_on: 
+            - mongodb
+        ports:
+            - "5000:5000"
