@@ -5,6 +5,12 @@ import logging as log
 # initialized the Flask APP
 app = Flask(__name__)
 
+"""
+TODO Test the Flask API. 
+TODO Take Screenshot of the response.
+TODO complete the documentation. 
+"""
+
 class CrudAPI:  # MongoDB Model for ToDo CRUD Implementation
     def __init__(self, data):   # Fetchs the MongoDB, by making use of Request Body
         log.basicConfig(level=log.ALL, format='%(asctime)s %(levelname)s: %(message)s\n')
